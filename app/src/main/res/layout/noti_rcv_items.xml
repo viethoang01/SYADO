@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/noti_rcv_items"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/noti_img_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/armorial_syado_" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/from_noti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="SYADO"
+                android:textColor="@color/black"
+
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+            <TextView
+                android:id="@+id/noti_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+
+                android:padding="5dp"
+                android:text="Content"/>
+            <TextView
+                android:id="@+id/noti_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:textSize="10sp"
+                android:text="T.5 23/03/2023"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

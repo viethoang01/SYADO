@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/armorial_syado_"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:padding="15dp"
+        android:orientation="horizontal"
+        >
+
+        <SearchView
+            android:id="@+id/address_filter"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:hint="Nhập khu vực tìm kiếm"/>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+
+        android:layout_marginTop="150dp"
+        android:background="#E7E8E8"
+        android:paddingTop="2dp" />
+    <!--        android:background="#F8F7F7"-->
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnbroadingFragment2"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/dd" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S YADO mang lại điều gì"
+        android:textColor="@color/black"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S YADO là một ứng dụng tìm trọ thông minh"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ứng dụng hướng tới các bạn học sinh, sinh viên và người đi làm cần tìm chỗ ở phù hợp với điều kiện của mình"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

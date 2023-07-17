@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:showIn="@layout/update_profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:id="@+id/info_user_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/headerText"
+                android:text="Account Information"
+                android:layout_marginBottom="20dp"/>
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/nameImageView_update"
+                    android:src="@drawable/ic_name"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:id="@+id/nameTextView_update"
+                    android:text="Name"
+                    android:layout_toRightOf="@id/nameImageView_update"
+                    style="@style/profileDetailsTextMain" />
+
+                <EditText
+                    android:id="@+id/tv_name_profile_update"
+                    android:text="developer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/nameImageView_update"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/mobileImageView_update"
+                    android:src="@drawable/ic_mobile"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+
+                    android:text="Mobile"
+                    android:layout_toRightOf="@id/mobileImageView_update"
+                    style="@style/profileDetailsTextMain"/>
+
+                <EditText
+                    android:id="@+id/tv_phone_profile_update"
+                    android:text="+91-8129999999"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/mobileImageView_update"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/emailImageView_update"
+                    android:src="@drawable/ic_email"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="Email"
+                    android:layout_toRightOf="@id/emailImageView_update"
+                    style="@style/profileDetailsTextMain" />
+
+                <EditText
+                    android:id="@+id/tv_email3_profile_update"
+                    android:text="developer@appsnipp.com"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/emailImageView_update"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/addressImageView_update"
+                    android:src="@drawable/ic_address"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="Address"
+                    android:layout_toRightOf="@id/addressImageView_update"
+                    style="@style/profileDetailsTextMain" />
+
+                <EditText
+                    android:id="@+id/tv_address_profile_update"
+                    android:text="Avenue 2nd Street NW SY."
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/addressImageView_update"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/dobImageView_update"
+                    android:src="@drawable/ic_dob"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="D.O.B"
+                    android:layout_toRightOf="@id/dobImageView_update"
+                    style="@style/profileDetailsTextMain" />
+
+                <EditText
+                    android:id="@+id/tv_dob_profile_update"
+                    android:text="12-05-1990"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/dobImageView_update"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_update_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primaryTextColor"
+            android:text="Cập nhật"
+            />
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>
